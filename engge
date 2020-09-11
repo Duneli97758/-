@@ -1,0 +1,40 @@
+# -
+using System;
+ using System.Collections.Generic;
+ using System.Linq;
+ using System.Text;
+ using System.Threading.Tasks;
+ namespace ConsoleApplication2
+ {
+     class Program
+     {
+         static void Main(string[] args)
+         ｛
+                string a;
+                 Console.Write("请输入想查询的商品：");
+                 a=Console.ReadLine();
+                 switch(a){
+                     case "黄瓜":
+                      Console.WriteLine(a+"的价格为5元");
+                     break;
+                     case "香蕉":
+                      Console.WriteLine(a + "的价格为8元");
+                      break;
+                     case "苦瓜":
+                      Console.WriteLine(a + "的价格为10元");
+                      break;
+                     case "苹果":
+                      Console.WriteLine(a + "的价格为12元");
+                      break;
+                       default:
+                      Console.WriteLine("您输入的名称不正确");
+                      break;
+
+                 }
+                 Console.ReadKey();
+             }
+     }
+ }
+
+
+
