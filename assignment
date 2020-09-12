@@ -1,1 +1,45 @@
+一.我们作为软件开发人员，为什么要编写单元测试？
+1.帮助开发人员编写代码，提升质量、减少bug
+2.提升反馈速度，减少重复工作，提高开发效率
+3.保证你最后的代码修改不会破坏之前代码的功能。
+4.让代码维护更容易。
+5.有助于改进代码质量和设计。
+
+
+
+二.请大家自行查找冒泡排序算法的原理，并用Java语言实现，并根据测试用例对算法编写单元测试。并说明你使用了哪些测试用例？完成后把代码上传到自己的仓库，以仓库地址的形式提交作业。
+public class maopaopaixu {
+
+	public static void main(String[] args) {
+		
+		int [] arr = { 56, 12,78,34,40,5,23,57,92,46};
+		printArray(arr);	
+		bubbleArray(arr);
+		System.out.println();
+		printArray(arr);
+		
+	}
+
+	private static void bubbleArray(int[] arr) {
+		// TODO 自动生成的方法存根
+		for(int i=0; i<arr.length; i++)
+			System.out.print(arr[i] + "  ");
+	}
+
+	private static void printArray(int[] arr) {
+		// TODO 自动生成的方法存根
+		for(int i=0; i<arr.length; i++) {
+			for(int j =0;j<arr.length-1;j++) {
+				if(arr[j] > arr[j+1]) {
+					int t=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=t;
+				}
+				
+			}
+		}
+		
+	}
+
+}
 
